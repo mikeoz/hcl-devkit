@@ -1,0 +1,26 @@
+{
+  "name": "@opnli/hcl-devkit",
+  "version": "0.1.0",
+  "description": "Developer tools for building HCL-conformant agents and platforms. Verification Endpoint client, audit chain library, and CARD schema validators.",
+  "main": "src/index.js",
+  "keywords": [
+    "human-consent-layer",
+    "hcl",
+    "agent-trust-layer",
+    "ai-agent",
+    "consent",
+    "verification-endpoint",
+    "audit-chain",
+    "card",
+    "opnli"
+  ],
+  "author": "Opnli Corporation",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikeoz/hcl-devkit"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
