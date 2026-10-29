@@ -4,18 +4,20 @@
 
 The HCL DevKit provides three libraries for integrating with the [Human Consent Layer](https://github.com/mikeoz/human-consent-layer) standard:
 
-- **Verification Endpoint Client** — query the Trust Network to verify agent identity, CARD status, and revocation state before granting access.
+- **Verification Endpoint Client** — query the Openly Trusted Network to verify agent identity, CARD status, and revocation state before granting access.
 - **Audit Chain Library** — create and verify SHA-256 hash-chained audit logs that satisfy the HCL's tamper-evident invariant (INV-TE).
 - **CARD Schema Validators** — validate CARD credential and CARD Set payloads against the published JSON schemas.
 
 ## Quick Start
+
+> **Out of date (29 October 2026).** The Verification Endpoint this quick start calls (`https://consent.opn.li/v1/verify`) is not live on the Openly Trusted Network, so every `ve.verify()` check fails. The code is kept for reference. A new quickstart, "Add the Green Shield to your MCP tool", is in preparation. Until it is published, start at the [Open Consent Project](https://github.com/mikeoz/open-consent).
 
 ```javascript
 const { VEClient } = require('./src/ve-client');
 const { AuditChain } = require('./src/audit-chain');
 const { validateCard, validateCardSet } = require('./src/schema-validator');
 
-// Verify an agent against the Trust Network
+// Verify an agent against the Openly Trusted Network (out of date: see note above)
 const ve = new VEClient('https://consent.opn.li/v1');
 const result = await ve.verify(agentId, cardId);
 
@@ -72,4 +74,4 @@ Validate CARD credentials and CARD Sets against the JSON schemas published in th
 
 ## License
 
-Apache 2.0 — Openly Personal Networks, Inc.
+Apache 2.0 — Opnli Corporation
