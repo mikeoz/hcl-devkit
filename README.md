@@ -10,7 +10,7 @@ The HCL DevKit provides three libraries for integrating with the [Human Consent 
 
 ## Quick Start
 
-> **Out of date (29 October 2026).** The Verification Endpoint this quick start calls (`https://consent.opn.li/v1/verify`) is not live on the Openly Trusted Network, so every `ve.verify()` check fails. The code is kept for reference. A new quickstart, "Add the Green Shield to your MCP tool", is in preparation. Until it is published, start at the [Open Consent Project](https://github.com/mikeoz/open-consent).
+> **Out of date (29 October 2026).** The Verification Endpoint this quick start calls (`https://consent.opn.li/v1/verify`) is not live on the Openly Trusted Network, so every `ve.verify()` check fails. The code is kept for reference. For a working way to add Green Shield consent to your own tool, start with [green-shield-mcp](https://github.com/mikeoz/green-shield-mcp) and its ten-minute quickstart.
 
 ```javascript
 const { VEClient } = require('./src/ve-client');
